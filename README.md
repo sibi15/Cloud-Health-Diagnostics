@@ -2,7 +2,7 @@
 This project implements a deep learning pipeline for early-stage medical diagnosis, deployed using AWS SageMaker. It first detects the scan type (X-ray, CT, MRI), then performs a preliminary classification using trained CNN models. The system is built to assist medical professionals and patients by offering early insights ahead of formal diagnosis.
 
 Tools and Libraries:
-- Python, TensorFlow, Keras
+- Python, AWS SageMaker, TensorFlow, Keras
 - Deep Learning Models: CNN, DenseNet121, ResNet50, VGG16, VGG19
 - Pandas, NumPy, OpenCV, Matplotlib, Seaborn
 
