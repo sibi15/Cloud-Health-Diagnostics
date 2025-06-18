@@ -1,2 +1,23 @@
 # Cloud-Health-Diagnostics
-AI tool designed to support early-stage diagnosis by analysing medical scans (X-rays, CT scans, and MRIs). By using advanced machine learning models, the system first identifies the type of scan and then provides an initial diagnosis, helping both patients and doctors to get a clearer understanding of potential health issues before the specialist consultation. With its cloud-based infrastructure, the tool is easy to access from anywhere, making it a valuable resource for healthcare providers and improving the efficiency of the diagnostic process. The final accuracies of the models ranged from 67% to 83% based on the type of medical scan and the models used were CNNs, DenseNet121, ResNet50, VGG16 and VGG19.
+This project implements a cloud-compatible deep learning pipeline for early-stage medical diagnosis. It first detects the scan type (X-ray, CT, MRI), then performs a preliminary classification using trained CNN models. The system is built to assist medical professionals and patients by offering early insights ahead of formal diagnosis.
+
+Tools and Libraries:
+- Python, TensorFlow, Keras
+- Deep Learning Models: CNN, DenseNet121, ResNet50, VGG16, VGG19
+- Pandas, NumPy, OpenCV, Matplotlib, Seaborn
+
+Key Features:
+- Classifies input images as X-ray, CT, or MRI before diagnosis
+- Runs inference using pre-trained convolutional architectures
+- Achieves 67–83% accuracy across different image types and model variants
+- Modular design supports easy integration with clinical cloud systems
+- Enables early insights for quicker intervention in resource-limited settings
+
+Future Goals:
+- Deploy GUI for interactive upload and result display
+- Integrate patient history metadata for better diagnostic accuracy
+- Expand dataset across more conditions and imaging modalities
+- Enable API access for hospital management systems
+
+Outcome:
+Built as a scalable, assistive diagnostic tool to support remote and urban clinics alike. The system speeds up the diagnostic process by automating early scan interpretation and reducing initial workload for radiologists.
