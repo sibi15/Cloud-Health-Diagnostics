@@ -13,11 +13,11 @@ Key Features:
 - Modular design supports easy integration with clinical cloud systems
 - Enables early insights for quicker intervention in resource-limited settings
 
-Outcome:
-Built as a scalable, assistive diagnostic tool to support remote and urban clinics alike. The system speeds up the diagnostic process by automating early scan interpretation and reducing initial workload for radiologists.
-
 Future Goals:
 - Deploy GUI for interactive upload and result display
 - Integrate patient history metadata for better diagnostic accuracy
 - Expand dataset across more conditions and imaging modalities
 - Enable API access for hospital management systems
+
+Outcome:
+Built as a scalable, assistive diagnostic tool to support remote and urban clinics alike. The system speeds up the diagnostic process by automating early scan interpretation and reducing initial workload for radiologists.
