@@ -1,5 +1,5 @@
 # Cloud-Health-Diagnostics
-This project implements a cloud-compatible deep learning pipeline for early-stage medical diagnosis. It first detects the scan type (X-ray, CT, MRI), then performs a preliminary classification using trained CNN models. The system is built to assist medical professionals and patients by offering early insights ahead of formal diagnosis.
+This project implements a deep learning pipeline for early-stage medical diagnosis, deployed using AWS SageMaker. It first detects the scan type (X-ray, CT, MRI), then performs a preliminary classification using trained CNN models. The system is built to assist medical professionals and patients by offering early insights ahead of formal diagnosis.
 
 Tools and Libraries:
 - Python, TensorFlow, Keras
@@ -10,8 +10,8 @@ Key Features:
 - Classifies input images as X-ray, CT, or MRI before diagnosis
 - Runs inference using pre-trained convolutional architectures
 - Achieves 67–83% accuracy across different image types and model variants
-- Modular design supports easy integration with clinical cloud systems
 - Enables early insights for quicker intervention in resource-limited settings
+- Deployed on AWS SageMaker for scalable and low-latency cloud access
 
 Future Goals:
 - Deploy GUI for interactive upload and result display
