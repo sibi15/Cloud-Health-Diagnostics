@@ -1,0 +1,12 @@
+boto3
+sagemaker
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+tensorflow
+tensorflow-hub
+keras
+scikit-learn
+scikit-plot
