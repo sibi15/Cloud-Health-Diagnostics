@@ -8,17 +8,25 @@ Medical scan classification deployed on AWS SageMaker. A first model identifies 
 
 A three-person project.
 
-- **Sowmya Sriram:** the cloud layer. Deployed the four CNN classifiers on AWS SageMaker, costed one endpoint per model against a single shared endpoint, and proposed a **single routing endpoint** that sends each scan to the right model. The team adopted it.
+- **Sowmya Sriram:** the cloud layer. Deployed the models on AWS SageMaker, costed one endpoint per model against a single shared endpoint, and proposed a **single routing endpoint** that sends each scan to the right model.
 - [Sibi Karthik C V](https://github.com/sibi15)
 - One other teammate.
 
 ## Approach
 
 1. **Scan-type detection:** classify the input as X-ray, CT or MRI.
-2. **Diagnosis models:** transfer learning with VGG16, VGG19, ResNet50 and DenseNet121, plus a baseline CNN.
-3. **Deployment:** the models are hosted on SageMaker behind one routing endpoint, not one endpoint per model.
+2. **Diagnosis models:** transfer learning with ResNet50 (X-ray), DenseNet121 (MRI), VGG16 (CT – Kidney) and VGG19 (CT – Chest cancer).
+3. **Deployment:** the models are stored in S3 and deployed on SageMaker; the scan-type result decides which diagnosis model handles the image.
 
-Accuracy ranged from **67% to 83%**, depending on the scan type and the model.
+Test accuracy, from `main_project_code.ipynb`:
+
+| Model | Test accuracy |
+|---|---|
+| Scan type (ResNet50) | 83.8% |
+| CT – Kidney (VGG16) | 83.8% |
+| X-ray (ResNet50) | 66.4% |
+| CT – Chest cancer (VGG19) | 51.4% |
+| MRI (DenseNet121) | 37.6% |
 
 ## Repository
 
@@ -39,4 +47,4 @@ The SageMaker notebook needs an AWS account with SageMaker access, and the deplo
 
 ## Tech
 
-Python · TensorFlow, Keras, scikit-learn · AWS SageMaker, S3, Lambda · Pandas, NumPy, OpenCV
+Python · TensorFlow, Keras, scikit-learn · AWS SageMaker, S3 · Pandas, NumPy, OpenCV
