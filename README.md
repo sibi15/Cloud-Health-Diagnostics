@@ -4,7 +4,7 @@ This project implements a deep learning pipeline for early-stage medical diagnos
 ### Team and Roles:
 A three-person project.
 - **[Sowmya Sriram](https://github.com/sowmya0948)** – The cloud layer: deployed the models on AWS SageMaker, costed one endpoint per model against a single shared endpoint, and proposed a single routing endpoint that sends each scan to the right model.
-- **[Sibi Karthik C V](https://github.com/sibi15)**
+- **[Sibi Karthik C V](https://github.com/sibi15)** – The models: data preparation, and training and evaluation of the scan-type classifier and the four diagnosis CNNs (VGG, ResNet, DenseNet).
 - One other teammate
 
 ### Tools and Libraries:
